@@ -167,7 +167,7 @@ var circles = [];
 function onKeyDown(event){
   if(keyData[event.key]){
     keyData[event.key].sound.play();
-    var maxPoint = new Point(view.size.width, view.size.height);
+    var maxPoint = new Point(view.size);
     var randomPoint = new Point.random();
     var point = maxPoint * randomPoint;
     var circle = new Path.Circle(point, 500);
